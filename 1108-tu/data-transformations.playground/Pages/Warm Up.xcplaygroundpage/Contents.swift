@@ -16,10 +16,7 @@
 
 
 
-
-// 1 - makeAllUppercase
-
-// Here we have function that takes an array of strings, it also takes in a stirng and return a string
+// MARK: 1 - makeAllUppercase that takes an array of Strings and returns an array of Strings; all the strings in the returned array should only contain uppercase characters
 func makeAllUpperCase(arrayOfString: [String]) -> [String]{
     
     var capitalLetterWords = [""]
@@ -30,14 +27,7 @@ func makeAllUpperCase(arrayOfString: [String]) -> [String]{
 }
 makeAllUpperCase(arrayOfString: ["kenny","is","a","hero"])
 
-
-
-
-
-
-
-// 2 - convertAllToString
-
+// MARK: 2 - convertAllToString that takes an array of Ints and returns an array of Strings where every Int was transformed to a String
 func convertAllToString(arrayOfInts: [Int]) -> [String]{
     var newStringArray = [""]
     for integer in arrayOfInts {
@@ -47,8 +37,7 @@ func convertAllToString(arrayOfInts: [Int]) -> [String]{
 }
 convertAllToString(arrayOfInts: [1,2,3,4,5])
 
-
-// 3 - keepOnlyOdds that takes an array of Ints and returns an array of Ints that only has odd numbers
+// MARK: 3 - keepOnlyOdds that takes an array of Ints and returns an array of Ints that only has odd numbers
 func keepOnlyOdds(arrayOfInts: [Int]) -> [Int] {
     var oddInts: [Int] = []
     let greaterThanZero = 0
@@ -59,14 +48,9 @@ func keepOnlyOdds(arrayOfInts: [Int]) -> [Int] {
     }
     return oddInts
 }
-
 keepOnlyOdds(arrayOfInts: [2,5,3,5,2])
 
-
-
-
-// 4 - startingWithA that takes an array of Strings and returns an array of Strings that only contains Strings that start with the (uppercase) letter A
-
+// MARK: 4 - startingWithA that takes an array of Strings and returns an array of Strings that only contains Strings that start with the (uppercase) letter A
 func startingWithA(wordsArray: [String]) -> [String] {
     var capitalAWords: [String] = []
     
@@ -77,7 +61,6 @@ func startingWithA(wordsArray: [String]) -> [String] {
     }
     return capitalAWords
 }
-
 startingWithA(wordsArray: ["Kenny","AirBnB","John","David","Apple","Ape"])
 
 // 5 - computeProduct that takes an array of Ints and returns a single Int that is the product of all the elements in the array
@@ -93,12 +76,9 @@ func computeProduct(arrayOfIntegers: [Int]) -> Int {
     
     return integers
 }
-
 computeProduct(arrayOfIntegers: [1,2,3,4])
 
-
 // 6 - concatenateAll that takes an array of Strings and returns a String that is concatenates all the elements in the array
-
 func concatenateAll(arrayOfStrings: [String]) -> String {
     //    var joiner = ""
     //    for value in arrayOfStrings {
@@ -111,7 +91,6 @@ func concatenateAll(arrayOfStrings: [String]) -> String {
     let joinedArray = arrayOfStrings.joined(separator: joiner)
     return joinedArray
 }
-
 concatenateAll(arrayOfStrings: ["k","e","n","n","y"])
 
 
