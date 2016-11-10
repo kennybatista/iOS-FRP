@@ -18,8 +18,8 @@
 
 // MARK: 1 - makeAllUppercase that takes an array of Strings and returns an array of Strings; all the strings in the returned array should only contain uppercase characters
 func makeAllUpperCase(arrayOfString: [String]) -> [String]{
-    
     var capitalLetterWords = [""]
+    
     for word in arrayOfString {
         capitalLetterWords.append(word.uppercased())
     }
@@ -30,6 +30,7 @@ makeAllUpperCase(arrayOfString: ["kenny","is","a","hero"])
 // MARK: 2 - convertAllToString that takes an array of Ints and returns an array of Strings where every Int was transformed to a String
 func convertAllToString(arrayOfInts: [Int]) -> [String]{
     var newStringArray = [""]
+    
     for integer in arrayOfInts {
         newStringArray.append(String(integer))
     }
@@ -40,6 +41,7 @@ convertAllToString(arrayOfInts: [1,2,3,4,5])
 // MARK: 3 - keepOnlyOdds that takes an array of Ints and returns an array of Ints that only has odd numbers
 func keepOnlyOdds(arrayOfInts: [Int]) -> [Int] {
     var oddInts: [Int] = []
+    
     let greaterThanZero = 0
     for integer in arrayOfInts {
         if integer % 2 != 0 {
