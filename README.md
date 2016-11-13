@@ -1,5 +1,7 @@
 # FRP & Architectural Patterns  (Q2)
 
+Changed to FRP
+
 ## Working with this Github repository
 
 This repository is the _master_ repository which will contain all the course materials. That includes **slides, coding challenges and starter code** for larger projects.
