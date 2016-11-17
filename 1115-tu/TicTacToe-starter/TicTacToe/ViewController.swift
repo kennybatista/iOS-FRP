@@ -10,6 +10,8 @@ import UIKit
 import RxSwift
 
 class ViewController: UIViewController, BoardViewDelegate {
+    
+    var addBoard:((Board) -> ())?
   
   var board: Variable<Board> = Variable(Board()) //Board() // model
   weak var boardView: BoardView! // view
@@ -86,6 +88,17 @@ class ViewController: UIViewController, BoardViewDelegate {
     
     
   }
+    
+    
+    
+    @IBAction func dismissButton(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+        
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+        addBoard?(board.value)
+    }
+    
+    
   
 }
 
